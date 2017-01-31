@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
+
+  {% include head.html %}
+
   <body>
-    <section class="page-header">
-      <a href="{{ site.baseurl }}/"><h1 class="project-name">{{ site.title }}</h1></a>
-      <h2 class="project-tagline">{{ site.description }}</h2>
-      <a href="{{ site.baseurl }}/" class="btn">Latest News</a>
-      <a href="{{ site.baseurl }}/about.html" class="btn">About the Course</a>
-      <a href="{{ site.baseurl }}/register.html" class="btn">Register</a>
-      <a href="{{ site.baseurl }}/participant_information.html" class="btn">Participant Information</a>
-    </section>
+
+    {% include page-header.html %}
 
     <section class="main-content">
       {{ content }}
@@ -26,5 +15,7 @@
       </footer>
       -->
     </section>
+
+    <script src="{{ '/assets/javascripts/mobile-nav.js' | relative_url }}"></script>
   </body>
 </html>

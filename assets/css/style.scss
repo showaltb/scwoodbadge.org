@@ -3,9 +3,71 @@
 
 @import "{{ site.theme }}";
 
+$bp-small: 42em;
+
 section.page-header {
+  background-color: #fff;
+  background-image:
+    // then add the desired background image
+    // this image was created using ImageMagick's "convert" utility from
+    // original maclaren_tartan.jpg using this command:
+    // convert -resize 200 MacLaren_Tartan.jpg -blur 8x4 -alpha on -channel a -evaluate set 60% tartan_background.png
+    url('../images/tartan_background.png');
+
+  .btn {
+    background-color: #697;
+    &:hover {
+      background-color: #687;
+    }
+  }
+
+  &.small {
+    padding: 1rem;
+
+    .project-name {
+      font-size: 1.25em;
+      margin: 0 auto 1rem;
+    }
+
+    .project-tagline {
+      font-size: 1em;
+      margin: 0 auto 1rem;
+    }
+
+    .btn {
+      @media screen and (min-width: #{$bp-small}) {
+        margin-bottom: 0;
+        padding: .25em .5em;
+      }
+    }
+  }
+
   a {
     color: #fff;
     text-decoration: none;
   }
+}
+
+// mobile nav styles
+.mobile-nav-trigger {
+  @media screen and (min-width: #{$bp-small}) {
+    display: none;
+  }
+}
+
+.project-navigation {
+  display: none;
+
+  @media screen and (min-width: #{$bp-small}) {
+    display: block;
+  }
+
+  &.is-toggled {
+    display: block;
+  }
+}
+
+p.page-date {
+  margin-top: 0;
+  font-size: .75rem;
 }

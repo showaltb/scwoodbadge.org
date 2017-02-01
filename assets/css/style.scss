@@ -37,7 +37,8 @@ section.page-header {
     .btn {
       @media screen and (min-width: #{$bp-small}) {
         margin-bottom: 0;
-        padding: .25em .5em;
+        padding: .5em 1em;
+        font-size: .75rem;
       }
     }
   }

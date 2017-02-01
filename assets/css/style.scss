@@ -49,6 +49,54 @@ section.page-header {
   }
 }
 
+.page-footer {
+  $footer-bg-color: mix($body-text-color, black);
+
+  background-color: $footer-bg-color;
+  color: #fff;
+
+  a {
+    color: #adb;
+    display: inline-block;
+
+    &:hover {
+      color: #8b9;
+    }
+
+    &.has-image img {
+      max-height: 1.5rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: #{$bp-small}) {
+    flex-direction: row;
+  }
+
+  .column {
+
+    & + .column {
+      border-top: 1px solid $border-color;
+      padding-top: .75rem;
+    }
+
+    @media screen and (min-width: #{$bp-small}) {
+      width: 50%;
+
+      & + .column {
+        border-top: 0;
+        margin-left: 1.5rem;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
 // mobile nav styles
 .mobile-nav-trigger {
   @media screen and (min-width: #{$bp-small}) {

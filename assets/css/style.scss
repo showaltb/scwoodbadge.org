@@ -6,15 +6,20 @@
 $bp-small: 42em;
 
 section.page-header {
+  background-color: #fff;
   background-image:
-    // first, apply a gradient to subdue the background image
-    linear-gradient(
-      to bottom,
-      rgba(#024, .75),
-      rgba(#024, .55)
-    ),
     // then add the desired background image
-    url('../images/maclaren_tartan.jpg');
+    // this image was created using ImageMagick's "convert" utility from
+    // original maclaren_tartan.jpg using this command:
+    // convert -resize 200 MacLaren_Tartan.jpg -blur 8x4 -alpha on -channel a -evaluate set 60% tartan_background.png
+    url('../images/tartan_background.png');
+
+  .btn {
+    background-color: #697;
+    &:hover {
+      background-color: #687;
+    }
+  }
 
   &.small {
     padding: 1rem;

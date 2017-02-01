@@ -71,8 +71,12 @@ section.page-header {
 }
 
 .footer-grid {
+
   display: flex;
   flex-direction: column;
+
+  color: #ccc;
+  font-size: .75rem;
 
   @media screen and (min-width: #{$bp-small}) {
     flex-direction: row;

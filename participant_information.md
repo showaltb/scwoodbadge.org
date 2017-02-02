@@ -10,7 +10,7 @@ Here are some important documents for participants:
 
 A letter from the Scoutmaster welcoming you to the course. Start here.
 
-### [BSA Annual Health and Medical Record](http://www.scouting.org/scoutsource/HealthandSafety/ahmr.aspx)
+### [BSA Annual Health and Medical Record](http://www.scouting.org/filestore/HealthSafety/pdf/680-001_ABC.pdf)
 
 All participants _must_ submit a BSA Annual Health and Medical Record,
 parts A, B, and C, including a physician exam dated no earlier than

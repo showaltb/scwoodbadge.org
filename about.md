@@ -40,10 +40,10 @@ patrol.
 
 Wood Badge is open to registered adults in the BSA who have successfully
 completed the basic training requirements for their primary position.
-This generally consists of Fast Start, New Leader Essentials, and
-Position-Specific Training. Boy Scout leaders must also have completed
-Introduction to Outdoor Leader Skills. Leaders who have previously
-attended may be eligible to attend Wood Badge again.
+This generally consists of _This is Scouting_, New Leader Essentials,
+and Position-Specific Training. Boy Scout leaders must also have
+completed Introduction to Outdoor Leader Skills. Leaders who have
+previously attended may be eligible to attend Wood Badge again.
 
 ## How Much Does it Cost?
 
